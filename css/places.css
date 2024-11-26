@@ -1,0 +1,49 @@
+#places {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.placesblock {
+    background-color: #0065E9;/* #62a6ff;*/
+    padding: 30px;
+    margin: 30px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.placestitle {
+    color: white;
+    font-size: 35px;
+    font-family: 'Inter';
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.place {
+    font-family: 'Inter';
+    margin-bottom: 10px;
+    translate: 10px 0;
+}
+.place > span {
+    color: white;
+    display: block;
+}
+.place > span:nth-child(2) {
+    color: rgb(211, 211, 211);
+}
+.place::before {
+    content: "✔";
+    text-align: center;
+    font-size: 12px;
+    background-color: white;
+    position: absolute;
+    translate: -20px 12px;
+    color: #0065E9;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
